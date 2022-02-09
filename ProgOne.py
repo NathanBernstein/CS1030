@@ -15,10 +15,10 @@ if wallet.replace('.','',1).isnumeric(): #check if input is a number
         if float(wallet) < 0: #check if wallet's value is less than 0, if it is, exit
             print("You can't buy anything negative money! Try again.")
             exit()
-        elif len(y[-1]) != 2:
+        elif len(y[-1]) != 2: #if the index of y is not equal to 0 (There isn't two decimal places), exit
             print("Please enter a dollar amount in the format 0.00. Try again.")
             exit()
-        elif len(x[-1]) != 2:
+        elif len(x[-1]) != 2: #if the index of y is not equal to 0 (There isn't two decimal places), exit
             print("Please enter a dollar amount in the format 0.00. Try again.")
             exit()
         elif float(wallet) == 0: #check if wallet's value is 0, if it is, exit
