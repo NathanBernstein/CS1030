@@ -8,14 +8,14 @@ def compare(goal,comp):
     return score/len(goal)
 
 def create(leng):
-    allletters = "abcdefghijklmnopqrstuvwxyz ,.1234567890"
+    allletters = "abcdefghijklmnopqrstuvwxyz"
     tst = ""
     for i in range(leng):
-        tst+=allletters[random.randrange(39)]
+        tst+=allletters[random.randrange(26)]
     return tst
 
 def main():
-    goal = input("Enter the string you want the computer to find: ")
+    goal = input("Enter the word (lowercase) you want the computer to find: ")
     n = create(len(goal))
     score = compare(goal, n)
     best_score = 0
