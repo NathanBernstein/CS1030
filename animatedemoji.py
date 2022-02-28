@@ -1,6 +1,6 @@
 from graphics import *
 import time
-scrn = GraphWin("AnimatedEmohi", 500,500)
+scrn = GraphWin("AnimatedEmoji", 500,500)
 x = 10
 y = 10
 def outline():
