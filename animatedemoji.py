@@ -111,7 +111,7 @@ def eyes():
 
 def mouth():
     c=0
-    while (c < 15):
+    while (c < 7):
         a = 0
         b = 0
         r28 = Rectangle(Point(a+x+40,b+y+100),Point(a+x+50,b+y+110))
@@ -136,11 +136,22 @@ def mouth():
         c+=1
     r28.draw(scrn)
     r29.draw(scrn)
+def colorCircle():
+    i=75
+    j=75
+    while (i<100):
+        while (j<100):
+            r32 = Rectangle(Point(75,75),Point(i,j))
+            r32.draw(scrn)
+            r32.setFill("Red")
+            i+=1
+            j+=1
 
 
 outline()
 glasses()
 eyes()
 mouth()
+colorCircle()
 scrn.getMouse()
 scrn.close()
