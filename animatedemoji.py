@@ -1,3 +1,10 @@
+'''
+Nate Bernstein
+Graphics
+Feb 28
+CS1030
+'''
+
 from graphics import *
 import time
 scrn = GraphWin("AnimatedEmoji", 500,500)
