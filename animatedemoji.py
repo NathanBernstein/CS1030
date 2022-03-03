@@ -104,17 +104,18 @@ def eyes():
     r25.setFill("White")
     r26.setFill("White")
     r27.setFill("White")
-    time.sleep(.5)
+    time.sleep(.75)
     r24.undraw()
-    time.sleep(.05)
+    time.sleep(.1)
     r23.undraw()
     r22.undraw()
-    time.sleep(.7)
+    time.sleep(.8)
     r22.draw(scrn)
     r23.draw(scrn)
     r24.draw(scrn)
     r32.undraw()
     r33.undraw()
+    time.sleep(1)
 
 def mouth():
     c=0
@@ -144,21 +145,19 @@ def mouth():
     r28.draw(scrn)
     r29.draw(scrn)
 def colorCircle():
-    i=75
-    j=75
-    while (i<100):
-        while (j<100):
-            r32 = Rectangle(Point(75,75),Point(i,j))
-            r32.draw(scrn)
-            r32.setFill("Red")
-            i+=1
-            j+=1
+    i = 0
+    while (i<75):
+        c1 = Circle(Point(75+x,75+y),i)
+        c1.draw(scrn)
+        c1.setFill("Light Blue")
+        i+=1
+        time.sleep(.05)
 
-
+colorCircle()
 outline()
 glasses()
 eyes()
 mouth()
-colorCircle()
+
 scrn.getMouse()
 scrn.close()
